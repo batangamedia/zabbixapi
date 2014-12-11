@@ -1,5 +1,5 @@
 Module info
-------------
+-----------
 
 This is the zabbix_monitor module. It allows you to generate Zabbix host and template information using the Zabbix API.
 
