@@ -1,4 +1,4 @@
-name 'nucleus-zabbix_monitor'
+name 'zabbixapi'
 version '0.0.1'
 
 author 'Mattias Geniar'
