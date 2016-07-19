@@ -10,9 +10,9 @@ module Zabbix
         config = YAML.load_file(config_file)
 
         zbx = ZabbixApi.connect(
-                               :url => config.fetch('zabbix_url', 'http://localhost/zabbix/api_jsonrpc.php'),
-                               :user => config.fetch('zabbix_user','Admin'),
-                               :password => config.fetch('zabbix_password', 'zabbix')
+                               :url => config.fetch('zabbix_url', 'http://nms.crvt.net/api_jsonrpc.php'),
+                               :user => config.fetch('zabbix_user','apiuser'),
+                               :password => config.fetch('zabbix_password', 'btng16')
                                )
         return zbx
     end

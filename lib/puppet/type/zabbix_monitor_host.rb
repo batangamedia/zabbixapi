@@ -28,6 +28,8 @@ Puppet::Type.newtype(:zabbix_monitor_host) do
       validate do |value|
         unless value =~ /^\w+/
           raise ArgumentError, "%s is not a valid groups parameter" % value
+		else
+		  puts value
         end
       end
   end
