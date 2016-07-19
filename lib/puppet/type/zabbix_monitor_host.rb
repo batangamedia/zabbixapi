@@ -26,11 +26,9 @@ Puppet::Type.newtype(:zabbix_monitor_host) do
   newparam(:groups) do
       desc "Host groups to add the host to."
       validate do |value|
-        unless value =~ /^\w+/
-          raise ArgumentError, "%s is not a valid groups parameter" % value
-		else
-		  puts value
-        end
+        #unless value =~ /^\w+/
+        #  raise ArgumentError, "%s is not a valid groups parameter" % value
+        #end
       end
   end
 
